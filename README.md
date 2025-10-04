@@ -1,3 +1,14 @@
+---
+title: AI Text Summarizer
+emoji: 📝
+colorFrom: blue
+colorTo: purple
+sdk: streamlit
+sdk_version: 1.50.0
+app_file: streamlit_app.py
+pinned: false
+---
+
 # 📝 Text Summarizer CLI
 
 A lightweight Python command-line tool that extracts the most important sentences from text using extractive summarization. Works offline with no API required.
