@@ -57,7 +57,6 @@ The application uses **extractive summarization** with a word frequency scoring 
 ---
 
 ## 🚀 Quick Start
-
 ### Installation
 1. **Clone the repository:**
   git clone https://github.com/kdeepak2001/Ai-Text-Summarizer.git
@@ -94,27 +93,34 @@ usage: app.py [-h] [--file FILE] [--url URL] [--num-sentences N]
 
 AI Text Summarizer - Extract key sentences from any text
 
-optional arguments:
+**optional arguments**:
 -h, --help show this help message and exit
 --file FILE, -f FILE Path to text file
 --url URL, -u URL URL to fetch and summarize
 --num-sentences N, -n N
 Number of sentences (default: 3)
 undefined
+
 ---
+---
+## 📂 Project Structure
 
 ## 📂 Project Structure
----
-Ai-Text-Summarizer/
-├── app.py # CLI application
-├── streamlit_app.py # Web UI application
-├── requirements.txt # Python dependencies
-├── .streamlit/
-│ └── config.toml # Streamlit configuration
-├── README.md # Project documentation
-├── JOURNEY.md # Development log
-└── LICENSE # MIT License
-undefined
+
+| File/Folder | Description |
+|-------------|-------------|
+| `app.py` | CLI application for command-line usage |
+| `streamlit_app.py` | Web UI application with interactive interface |
+| `requirements.txt` | Python package dependencies |
+| `.streamlit/config.toml` | Streamlit configuration settings |
+| `README.md` | Project documentation |
+| `JOURNEY.md` | Development process log |
+| `LICENSE` | MIT License file |
+
+**Key Directories:**
+- **Root** - Main application files and configuration
+- **.streamlit/** - Contains Streamlit-specific settings
+
 ---
 ---
 ## 🎓 Learning Outcomes
