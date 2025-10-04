@@ -59,40 +59,27 @@ The application uses **extractive summarization** with a word frequency scoring 
 ## 🚀 Quick Start
 
 ### Installation
-
 1. **Clone the repository:**
-
-git clone https://github.com/kdeepak2001/Ai-Text-Summarizer.git
-cd Ai-Text-Summarizer
+  git clone https://github.com/kdeepak2001/Ai-Text-Summarizer.git
+  cd Ai-Text-Summarizer
 
 2. **Create virtual environment:**
-
-python -m venv .venv
-.venv\Scripts\activate # Windows
-source .venv/bin/activate # Linux/Mac
+ --- python -m venv .venv
+  .venv\Scripts\activate # Windows
+  source .venv/bin/activate # Linux/Mac ---
 
 3. **Install dependencies:**
-
 pip install -r requirements.txt
 
 ---
-
----
-
 ## 💡 Usage
-
 ### Web Interface (Streamlit)
-
 streamlit run streamlit_app.py
-
-
 Then open http://localhost:8501 in your browser.
 
 ### Command Line
-
 **From text input:**
 echo "Your text here..." | python app.py
-
 
 **From file:**
 python app.py --file document.txt --num-sentences 5
@@ -100,16 +87,8 @@ python app.py --file document.txt --num-sentences 5
 **From URL:**
 python app.py --url https://example.com/article
 
-
 ---
-
-## 📸 Screenshots
-
-### Web Interface
-![Streamlit UI](https://via.placeholder.com/800x400.png?text=Add+Your+Screenshot)
-
 ### CLI Usage
-
 $ python app.py --help
 usage: app.py [-h] [--file FILE] [--url URL] [--num-sentences N]
 
@@ -121,13 +100,11 @@ optional arguments:
 --url URL, -u URL URL to fetch and summarize
 --num-sentences N, -n N
 Number of sentences (default: 3)
-
-
+undefined
 ---
 
 ## 📂 Project Structure
-
-'''
+---
 Ai-Text-Summarizer/
 ├── app.py # CLI application
 ├── streamlit_app.py # Web UI application
@@ -137,17 +114,12 @@ Ai-Text-Summarizer/
 ├── README.md # Project documentation
 ├── JOURNEY.md # Development log
 └── LICENSE # MIT License
-
 undefined
-'''
-
-
 ---
-
+---
 ## 🎓 Learning Outcomes
 
 This project demonstrates proficiency in:
-
 - ✅ Natural Language Processing fundamentals
 - ✅ Algorithm implementation (word frequency scoring)
 - ✅ Web application development with Streamlit
@@ -156,13 +128,11 @@ This project demonstrates proficiency in:
 - ✅ Git version control and GitHub workflow
 - ✅ Cloud deployment on Hugging Face Spaces
 - ✅ Professional documentation and code organization
-
 ---
-
+---
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to:
-
 - 🐛 Report bugs
 - 💡 Suggest new features
 - 🔧 Submit pull requests
@@ -174,7 +144,7 @@ Contributions are welcome! Feel free to:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
+---
 ## 👨‍💻 Author
 
 **K Deepak**  
