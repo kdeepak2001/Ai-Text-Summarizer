@@ -21,14 +21,23 @@ def fetch_url_text(url):
         response.raise_for_status()
         soup = BeautifulSoup(response.content, 'html.parser')
         
-        for script in soup(["script", "style"]):
-            script.decompose()
+        # Remove unwanted elements
+        for element in soup(["script", "style", "nav", "header", "footer", "aside", "form"]):
+            element.decompose()
         
-        text = soup.get_text(separator=' ', strip=True)
+        # Try to find main content area (common article containers)
+        main_content = soup.find('article') or soup.find('main') or soup.find(class_='content') or soup.body
+        
+        if main_content:
+            text = main_content.get_text(separator=' ', strip=True)
+        else:
+            text = soup.get_text(separator=' ', strip=True)
+        
         return text
     except Exception as e:
         print(f"Error fetching URL: {e}", file=sys.stderr)
         sys.exit(1)
+
 
 
 def read_file_text(filepath):
